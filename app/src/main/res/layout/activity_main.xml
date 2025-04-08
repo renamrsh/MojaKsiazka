@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/book"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="#64B5F6"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zobaczOpis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="#64B5F6"
+                android:text="Zobacz opis"
+                android:textColor="#009688"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/chcePrzeczytac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#64B5F6"
+                android:text="Dodaj do chcę przeczytać"
+                android:textColor="#009688"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/przypomniejOKsiazce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#64B5F6"
+                android:text="Przypomnij o książce"
+                android:textColor="#009688"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tytul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Książce"
+            android:textColor="#212121"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/opis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fascynująca powieść przygodowa, która wciągnie Cię od pierwszej strony."
+            android:textColor="#3F51B5" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+
+        <TextView
+            android:id="@+id/messageSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodano do listy 'Chcę przeczytać"
+            android:textColor="#008000"
+            android:visibility="gone"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"
+        android:text="Autor: [moje imię i nazwisko]"
+        android:textColor="#808080"
+        android:textSize="12dp" />
+
+</LinearLayout>
